@@ -1,0 +1,14 @@
+{
+	"apps": [
+		{
+			"name": "blog-server",
+			"script": "H:\\#2. Project\\React\\react_study\\lesson19-blog-back-end-mongodb\\src\\index.js",
+			"instances": 4,
+			"env": {
+				"pm_cwd": "H:\\#2. Project\\React\\react_study\\lesson19-blog-back-end-mongodb",
+				"npm_package_scripts_start_pm": "cross-env node_path=src",
+				"node_path": "src"
+			}
+		}
+	]
+}
