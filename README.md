@@ -52,11 +52,39 @@
 
 ## pm2 flow
 ```
+-- 설치
 yarn global add pm2
 yarn global add pm2-windows-startup
 pm2-startup install
+
+-- start
 pm2 start app.js --name my-app
+pm2 start server.json << json 설정파일이 있을 경우 이걸로 start 함
+
+-- 설정 저장
 pm2 save
-reboot
-pm2 ls
+
+-- save 했던 환경 설정파일로 다시 시작
+pm2 resurrect
+
+-- 리부트
+pm2 reboot
+
+-- app 재시작
+pm2 restart <<id>> or <<app name>>
+
+-- 클러스터 모드를 사용할 때는 reload를 사용하면 다운 타임 없이 서버 재가동 됨
+pm2 reload <<id>> or <<app name>>
+
+-- app 정지
+pm2 stop <<id>> or <<app name>>
+
+-- app 목록에서 제거
+pm2 del <<id>> or <<app name>>
+
+-- 서비스 리스트 조회
+pm2 ls or pm2 list
+
+-- 모니터링
+pm2 monit
 ```

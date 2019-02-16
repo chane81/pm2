@@ -4,8 +4,22 @@
 			"name": "blog-server",
 			"script": "H:\\#2. Project\\React\\react_study\\lesson19-blog-back-end-mongodb\\src\\index.js",
 			"instances": 4,
+			"watch": true,
+			"exec_mode": "cluster",
 			"env": {
 				"pm_cwd": "H:\\#2. Project\\React\\react_study\\lesson19-blog-back-end-mongodb",
+				"npm_package_scripts_start_pm": "cross-env node_path=src",
+				"node_path": "src"
+			}
+		},
+		{
+			"name": "normal-server",
+			"script": "H:\\#2. Project\\React\\react_study\\lesson18-blog-backend\\src\\index.js",
+			"instances": 1,
+			"watch": true,
+			"exec_mode": "cluster",
+			"env": {
+				"pm_cwd": "H:\\#2. Project\\React\\react_study\\lesson18-blog-backend",
 				"npm_package_scripts_start_pm": "cross-env node_path=src",
 				"node_path": "src"
 			}
