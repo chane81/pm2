@@ -64,6 +64,9 @@ pm2 start server.json << json 설정파일이 있을 경우 이걸로 start 함
 -- 설정 저장
 pm2 save
 
+-- 등록된 pm2 설정 지우기
+pm2-startup uninstall
+
 -- save 했던 환경 설정파일로 다시 시작
 pm2 resurrect
 
